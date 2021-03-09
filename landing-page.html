@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon"> 
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Rock+Salt&family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/landing-page.css">   
+</head>    
+<body>
+     <!-- SIGN UP MODAL -->
+    <div id="modal-signup" class="modal">
+        <div class="modal-content">
+        <h4>Become a member today!</h4><br />
+        <form id="signup-form">
+            <div class="input-field">
+            <input type="email" id="signup-email" required />
+            <label for="signup-email">Enter email address</label>
+            <span id="register-error-email"></span>
+            </div>
+            <div class="input-field">
+            <input type="password" id="signup-password" required />
+            <label for="signup-password">Choose a password</label>
+            <small style="color: gray;">Password should be at least 6 characters</small> <br>
+            <span id="register-error-password" style="color: red;"></span>
+            </div>
+            <button class="btn blue-gradient">Register</button>
+        </form>
+        </div>
+    </div>
+
+    <!-- LOGIN MODAL -->
+    <div id="modal-login" class="modal">
+        <div class="modal-content">
+        <h4>Login</h4><br />
+        <form id="login-form">
+            <div class="input-field">
+            <input type="email" id="login-email" required />
+            <label for="login-email">Email address</label>
+            <span id="login-error-email"></span>
+            </div>
+            <div class="input-field">
+            <input type="password" id="login-password" required />
+            <label for="login-password">Your password</label>
+            <span id="login-error-password" style="color: red;"></span>
+            </div>
+            <button class="btn blue-gradient">Login</button>
+        </form>
+        </div>
+    </div>
+
+            <!-- Jumbotron -->
+            <div class="bg">
+                <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+                <div class="py-4" style="margin-top: 70px">
+            
+                    <!-- Content -->
+                    <h3 id="showmessage" class="h3 green-text mb-0 pt-md-5 pt-5" style="font-family: 'Eagle Lake', cursive; letter-spacing: 3px;"></h3>
+                    <h4 class="h4 orange-text mb-0 pt-md-5 pt-5" style="font-family: 'Eagle Lake', cursive; letter-spacing: 3px;"><img src="../assets/logoo.png" alt="bodyfit-logo"></h4>
+                    <!-- <h2 class="card-title h2 my-4 py-2" style="font-family: 'Eagle Lake'; font-size: 22px;">Hello! You have landed on the other side of the universe</h2> -->
+                    <p class="mb-4 pb-2 px-md-5 mx-md-5 py-3" style="font-family: 'Zhi Mang Xing'; letter-spacing: 3px; font-size: 28px;">Love yourself enough to work harder.</p>
+                    <a href="#"class="btn blue-gradient modal-trigger" data-toggle="modal" data-target="modal-login" style="font-family: 'Eagle Lake';"> Login</a>
+                    <a href="#"class="btn blue-gradient modal-trigger" data-toggle="modal" data-target="modal-signup" style="font-family: 'Eagle Lake';"> Register</a>
+                    <p>Please login to use our website. Thankyou!</p>
+            
+                </div>
+                </div>
+            </div>
+    
+              
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+<script src="/firebase_auth/js/appconfig.js"></script>
+
+<script>
+  //auth and firestore references
+  const auth = firebase.auth();
+
+</script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="/firebase_auth/js/auth.js"></script>
+  <script src="/firebase_auth/js/index.js"></script>
+  
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+        
+    </body>
+</html>

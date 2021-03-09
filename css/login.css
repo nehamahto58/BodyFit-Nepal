@@ -1,0 +1,34 @@
+:root {
+	--ff-yellow: #ffe600;
+	--ff-blue: #00a4ff;
+	--ff-gray: #141414;
+}
+
+html,
+body {
+	font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
+}
+
+.header__inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	width: 100%;
+	height: 100px;
+}
+.nav-link--custom {
+	color: #fff !important;
+}
+
+.nav-link--custom:hover {
+	color: var(--ff-blue) !important;
+}
+
+.nav-item--custom.active a {
+	color: var(--ff-blue) !important;
+}
+
+.btn--menu svg {
+	color: #ffffff;
+}
